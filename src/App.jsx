@@ -20,7 +20,7 @@ function App() {
         <Route index element={<AllPosts />} />
           <Route path=":postId" element={<PostDetails />} />
           <Route path="create" element={<ModalAddPost />}>
-            <Route index element={<CreateNewPost />} />
+            <Route index element={<CreateNewPost/>} />
           </Route>
         </Route>
         <Route path="/*" element={<NotFoundPage />} />

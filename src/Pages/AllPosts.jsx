@@ -2,6 +2,7 @@ import useAxios from "../Hooks/useAxios"
 import Skeleton from '@mui/material/Skeleton';
 import Grid from '@mui/material/Grid';
 import Post from "../Components/Post";
+import { Link } from "react-router-dom";
 
 function AllPosts() {
   const URL = "http://localhost:8001/posts";
@@ -12,6 +13,7 @@ function AllPosts() {
 
   return (
     <>
+    <Link to="create">Create Post</Link>
     {loading ? (
              <Grid container spacing={2}>
              <Grid item xs={12}>

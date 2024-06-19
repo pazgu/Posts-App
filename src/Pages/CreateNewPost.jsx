@@ -1,7 +1,8 @@
+import CreateForm from "../Components/CreateForm"
 
 function CreateNewPost() {
   return (
-    <div>CreateNewPost</div>
+    <CreateForm/>
   )
 }
 
